@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hatenna Bot</title>
+  <meta name="description" content="Hatenna is a Pokétwo utility bot with predictions, collections, shiny hunts, daycare tools, feeds, and server quality-of-life features.">
+  <meta property="og:title" content="Hatenna Bot">
+  <meta property="og:description" content="Naming, Collection, & Daycare tools for Pokétwo.">
+  <meta property="og:image" content="/favicon.png">
+  <meta name="theme-color" content="#fce5e7">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("hatenna-theme");
+        var theme = saved === "dark" || saved === "light"
+          ? saved
+          : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="shell nav-inner">
+      <a class="brand" href="/">
+        <span class="brand-badge"><img src="/favicon.png" alt="Hatenna icon"></span>
+        <span>Hatenna - Pokétwo Naming Bot</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/tos.html">Terms</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+          <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+          <span class="theme-icon theme-icon-moon" aria-hidden="true">☾</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="hero-copy">
+          <span class="eyebrow">Pokétwo Utility Bot</span>
+          <h1>Naming, Collection, & Daycare tools for Pokétwo.</h1>
+          <p>
+            Hatenna is built to make Pokétwo servers easier to run and easier to play in. It includes
+            naming assistance, collections, shiny hunts, global sync, feeds, daycare tools, AFK utilities,
+            and server-focused quality-of-life systems.
+          </p>
+          <div class="cta-row">
+            <a class="button button-primary" href="https://discord.com/oauth2/authorize?client_id=1307910235737948252&scope=bot+applications.commands&permissions=0" target="_blank" rel="noreferrer">Add Hatenna</a>
+            <a class="button button-secondary" href="/privacy.html">Privacy Policy</a>
+            <a class="button button-secondary" href="/tos.html">Terms of Service</a>
+          </div>
+          <div class="cta-row cta-row-discord">
+            <a class="button button-discord" href="https://discord.gg/5XurcUaW83" target="_blank" rel="noreferrer">Support Server</a>
+            <a class="button button-discord" href="https://discord.gg/cosmichaos" target="_blank" rel="noreferrer">Featured Poketwo Server</a>
+          </div>
+        </div>
+        <div class="hero-side">
+          <div class="hero-art-card">
+            <img class="hero-art" src="/pong.png" alt="Hatenna artwork">
+          </div>
+          <div class="stat-grid">
+            <div class="stat-card">
+              <span>Core Focus</span>
+              <strong>Pokétwo Support</strong>
+            </div>
+            <div class="stat-card">
+              <span>Global Tools</span>
+              <strong>OAuth Sync</strong>
+            </div>
+            <div class="stat-card">
+              <span>Utility Systems</span>
+              <strong>Feeds, AFK, Daycare</strong>
+            </div>
+            <div class="stat-card">
+              <span>Server Use</span>
+              <strong>Mass Incense Friendly</strong>
+            </div>
+          </div>
+          <div class="feature-card">
+            <h3>Designed for active servers</h3>
+            <p>
+              Hatenna focuses on fast responses, useful data, and server tools that actually help with
+              Pokétwo gameplay instead of getting in the way.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>What Hatenna does</h2>
+        <p class="intro">
+          Hatenna is centered around Pokétwo utility. It helps with predictions, public feed systems,
+          personal ping systems, and data-backed features that make day-to-day server use easier.
+        </p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Predictions and pings</h3>
+          <p>Spawn naming, shiny hunt pings, collection pings, and related server-side configuration tools.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Global sync</h3>
+          <p>Global collections and global shiny hunts across servers users are present in.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Feeds and leaderboards</h3>
+          <p>Catch, hatch, unbox, and balance-related systems for users on Pokétwo.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Daycare tools</h3>
+          <p>Daycare and breeding helpers intended for practical Pokétwo use with configurable command outputs.</p>
+        </article>
+        <article class="feature-card">
+          <h3>AFK utilities</h3>
+          <p>Timed and manual AFK controls for shiny hunt and collection pings with clear user-side status handling.</p>
+        </article>
+        <article class="feature-card">
+          <h3>QOL Features</h3>
+          <p>Settings, categories, reserve tools, extraction utilities, and feature controls for organized servers.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content-card donate-card">
+        <p>If you want to support Hatenna, you can do so here.</p>
+        <a class="donate-link" href="https://ko-fi.com/hatenna" target="_blank" rel="noreferrer">Donate</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <span>Hatenna Bot</span>
+      <span>
+        <a href="https://discord.gg/5XurcUaW83" target="_blank" rel="noreferrer">Support Server</a> ·
+        <a href="https://discord.gg/cosmichaos" target="_blank" rel="noreferrer">Featured Pokétwo Server</a> ·
+        <a href="/privacy.html">Privacy Policy</a> ·
+        <a href="/tos.html">Terms of Service</a>
+      </span>
+    </div>
+  </footer>
+  <script src="/theme.js"></script>
+</body>
+</html>

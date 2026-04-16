@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hatenna Bot Terms of Service</title>
+  <meta name="description" content="Terms of Service for Hatenna Bot.">
+  <meta property="og:title" content="Hatenna Bot Terms of Service">
+  <meta property="og:description" content="Terms of Service for Hatenna Bot.">
+  <meta property="og:image" content="/favicon.png">
+  <meta name="theme-color" content="#fce5e7">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("hatenna-theme");
+        var theme = saved === "dark" || saved === "light"
+          ? saved
+          : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="shell nav-inner">
+      <a class="brand" href="/">
+        <span class="brand-badge"><img src="/favicon.png" alt="Hatenna icon"></span>
+        <span>Hatenna</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/tos.html">Terms</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+          <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+          <span class="theme-icon theme-icon-moon" aria-hidden="true">☾</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell section">
+    <article class="content-card">
+      <span class="eyebrow">Legal</span>
+      <h2>Terms of Service</h2>
+
+      <h3>Introduction</h3>
+      <p>
+        By using or interacting with Hatenna (the "Bot") on Discord, you agree to these Terms of Service. You must be at
+        least 13 years of age to use the Bot. If you are the age of majority in your jurisdiction, you confirm that you
+        have read, understood, and agree to be legally bound by these Terms. If you are under the age of majority, your
+        legal guardian must review and agree to these Terms on your behalf. If you do not agree to these Terms, you must
+        not use the Bot.
+      </p>
+
+      <h3>Acceptable Use</h3>
+      <p>By using Hatenna, you agree not to engage in conduct that:</p>
+      <ul>
+        <li>violates these Terms, the Discord Terms of Service, the Poketwo Terms, or any applicable law or regulation</li>
+        <li>uses the Bot to spam, flood, abuse, or disrupt servers, channels, users, or Poketwo-related gameplay</li>
+        <li>engages in harassment, abuse, hate speech, impersonation, malicious behavior, or other harmful conduct</li>
+        <li>attempts to exploit, probe, reverse engineer, bypass, or gain unauthorized access to the Bot, its systems, or related infrastructure</li>
+        <li>uses automation, exploits, scripts, self-bots, or manipulation in connection with Hatenna in a way that violates Discord rules, Poketwo rules, or these Terms</li>
+        <li>uses Hatenna to support, facilitate, or assist conduct that violates Discord rules, Poketwo rules, or these Terms</li>
+        <li>falsely represents affiliation with Hatenna, its developers, Poketwo, or Discord</li>
+        <li>abuses OAuth, sync systems, feeds, leaderboards, daycare tools, or any other feature in a way that is deceptive, harmful, or unauthorized</li>
+      </ul>
+
+      <h3>Features and Service Use</h3>
+      <p>
+        Hatenna provides utility features related to Poketwo, including predictions, collections, shiny hunts, global sync,
+        daycare tools, AFK systems, feeds, leaderboards, and server configuration tools. Some features may require stored
+        feature state, supported Poketwo-related messages, or Discord OAuth authorization. You agree to use these features
+        only for their intended purpose.
+      </p>
+
+      <h3>OAuth and Global Sync</h3>
+      <p>
+        Some Hatenna features, including global sync, may require Discord OAuth authorization. By using those features, you
+        agree that Hatenna may use OAuth to determine which servers are relevant to the feature and to provide its intended
+        functionality. You must not use another user's OAuth link, interfere with the OAuth process, or attempt to gain
+        access to synced features in a way not intended by the Bot.
+      </p>
+
+      <h3>Availability and Changes</h3>
+      <p>
+        Hatenna is provided on an as-is and as-available basis. Features may change, be limited, break, be removed, or become
+        unavailable at any time without notice. We do not guarantee uninterrupted availability, error-free operation, permanent
+        data storage, or compatibility with all Discord, Poketwo, or third-party changes.
+      </p>
+
+      <h3>Termination and Enforcement</h3>
+      <p>
+        We reserve the right to restrict, suspend, or permanently revoke access to Hatenna at any time, with or without notice,
+        especially where we believe a user has violated these Terms, abused or misused Bot features, used Hatenna in connection
+        with prohibited automation or exploitative behavior, supported violations by other users, or created risk to the Bot,
+        its infrastructure, or its users.
+      </p>
+
+      <h3>Limitation of Liability</h3>
+      <p>
+        To the maximum extent permitted by law, Hatenna and its developers shall not be liable for any indirect, incidental,
+        consequential, special, or punitive damages, or for any loss of data, access, server configuration, feature state, or
+        gameplay-related information arising from the use of or inability to use the Bot.
+      </p>
+
+      <h3>Third-Party Platforms</h3>
+      <p>
+        Hatenna operates through Discord and may interact with Poketwo-related content. We are not responsible for the availability,
+        actions, policies, or changes of Discord, Poketwo, or any third-party service.
+      </p>
+
+      <h3>Changes to These Terms</h3>
+      <p>
+        These Terms of Service may be updated at any time. Continued use of Hatenna after changes are made constitutes acceptance
+        of the revised Terms.
+      </p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <span>Hatenna Bot</span>
+      <span>
+        <a href="/">Home</a> ·
+        <a href="/privacy.html">Privacy Policy</a>
+      </span>
+    </div>
+  </footer>
+  <script src="/theme.js"></script>
+</body>
+</html>

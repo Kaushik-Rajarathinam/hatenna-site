@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hatenna Bot Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Hatenna Bot.">
+  <meta property="og:title" content="Hatenna Bot Privacy Policy">
+  <meta property="og:description" content="Privacy Policy for Hatenna Bot.">
+  <meta property="og:image" content="/favicon.png">
+  <meta name="theme-color" content="#fce5e7">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("hatenna-theme");
+        var theme = saved === "dark" || saved === "light"
+          ? saved
+          : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="shell nav-inner">
+      <a class="brand" href="/">
+        <span class="brand-badge"><img src="/favicon.png" alt="Hatenna icon"></span>
+        <span>Hatenna</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/tos.html">Terms</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+          <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+          <span class="theme-icon theme-icon-moon" aria-hidden="true">☾</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell section">
+    <article class="content-card">
+      <span class="eyebrow">Legal</span>
+      <h2>Privacy Policy</h2>
+
+      <h3>Data Collection and Use</h3>
+      <p>
+        Hatenna is a Discord bot built for Pokétwo-related utility features, including predictions, collections,
+        shiny hunts, feeds, leaderboards, daycare tools, AFK systems, and server settings. Hatenna is intended
+        to respect user privacy as much as possible and only stores or processes data that is necessary for the
+        bot to function.
+      </p>
+      <ul>
+        <li>Discord user IDs, guild IDs, channel IDs, role IDs, and message IDs</li>
+        <li>Server and channel configuration data</li>
+        <li>Pokétwo-related data such as Pokemon names, forms, IDs, timestamps, catches, hatches, unboxes, balances, and related gameplay metadata</li>
+        <li>Feature-specific state such as collections, shiny hunts, reserve data, AFK timers, daycare data, feed data, leaderboard data, and related settings</li>
+        <li>Global sync data, including OAuth authorization state and synced server information where applicable</li>
+      </ul>
+
+      <h3>Message Processing</h3>
+      <p>
+        Hatenna does not read or store ordinary user chat messages except where necessary to process commands,
+        command replies, supported Pokétwo-related messages, or other feature-specific interactions used by the bot.
+      </p>
+      <ul>
+        <li>Commands explicitly run by users</li>
+        <li>Replied-to or referenced messages where a feature depends on that interaction</li>
+        <li>Supported Pokétwo messages, embeds, attachments, and related metadata required for bot functionality</li>
+      </ul>
+      <p>Hatenna does not monitor or archive general user conversation for unrelated purposes.</p>
+
+      <h3>Purpose of Processing</h3>
+      <p>
+        Any stored or processed data is used only for the operation of Hatenna’s intended functionality. This includes
+        prediction and ping features, collections, shiny hunts, daycare tools, feeds, leaderboards, settings, OAuth-backed
+        global sync, service stability, abuse prevention, and technical diagnosis.
+      </p>
+      <p>
+        Hatenna does not sell user data. Stored data is not shared with third parties except where necessary for service
+        operation, such as hosting, database, caching, logging, or related infrastructure services under controlled access.
+      </p>
+
+      <h3>User Control</h3>
+      <p>
+        Where supported, users may control how their information is displayed or used in public-facing systems. This may
+        include opting out of certain feed or leaderboard visibility, hiding identifying information where anonymity controls
+        are supported, and disabling, clearing, or unsyncing certain feature states. Supported tracking or display systems may
+        also be managed through available bot commands, including <code>h!toggle</code> where applicable.
+      </p>
+
+      <h3>Data Retention</h3>
+      <p>
+        Data is retained only for as long as reasonably necessary to support bot functionality, operational integrity, and
+        feature continuity. Data may be removed, cleared, or become inactive when a server removes the bot, a feature is reset,
+        cleared, disabled, or unsynced, a user opts out of a supported feature, stale data is cleaned up, or a valid removal
+        request is made where applicable and technically feasible.
+      </p>
+
+      <h3>Third Parties</h3>
+      <p>
+        Hatenna operates on Discord and may process Pokétwo-related content only as required for supported bot functionality.
+        If a user uses OAuth-backed global sync, authorization is handled through Discord’s OAuth system. Hatenna may rely on
+        third-party infrastructure providers for hosting, storage, caching, logging, or similar technical services necessary
+        to operate the bot. Hatenna is not responsible for the privacy practices of Discord, Pokétwo, or any other third-party platform.
+      </p>
+
+      <h3>Security</h3>
+      <p>
+        Reasonable efforts are made to minimize collected data and restrict access to operational systems. However, no service
+        can guarantee absolute security.
+      </p>
+
+      <h3>Changes</h3>
+      <p>
+        This Privacy Policy may be updated from time to time to reflect changes in Hatenna’s functionality, infrastructure,
+        or privacy practices. Continued use of Hatenna after such changes constitutes acceptance of the revised policy.
+      </p>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <span>Hatenna Bot</span>
+      <span>
+        <a href="/">Home</a> ·
+        <a href="/tos.html">Terms of Service</a>
+      </span>
+    </div>
+  </footer>
+  <script src="/theme.js"></script>
+</body>
+</html>
